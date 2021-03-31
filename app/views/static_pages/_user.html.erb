@@ -1,0 +1,13 @@
+<div class="column">
+  <h2 class="title"><%= user.username%></h2>
+
+  <div class="columns">
+    <% photos_url.each do |photo_url| %>
+      <div class="column">
+        <figure class="image">
+          <img src="<%=photo_url%>">
+        </figure>
+      </div>
+    <% end %>
+  </div>
+</div>
