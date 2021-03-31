@@ -1,5 +1,6 @@
 <%= render 'form'%>
 
 <% if @user%>
-  <%= render 'user', user: @user, photos_url: @photos_url%>
+  <%= render 'user', user: @user, photos: @photos%>
 <% end %>
+

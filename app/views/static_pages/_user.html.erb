@@ -2,10 +2,10 @@
   <h2 class="title"><%= user.username%></h2>
 
   <div class="columns">
-    <% photos_url.each do |photo_url| %>
+    <% photos.each do |photo| %>
       <div class="column">
         <figure class="image">
-          <img src="<%=photo_url%>">
+          <%=image_tag Flickr.url(photo)%>
         </figure>
       </div>
     <% end %>
